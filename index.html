@@ -1,149 +1,500 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>GPS Map Camera — Privacy & Download</title>
-  <meta name="description" content="GPS Map Camera — Capture photos & videos with precise GPS tags, works offline. Privacy policy and download links.">
-  <style>
-    :root{--accent:#0b76ef;--bg:#fbfbfe;--card:#ffffff;--muted:#6b7280}
-    *{box-sizing:border-box}
-    body{font-family:Inter,Arial,Helvetica,sans-serif;margin:0;background:var(--bg);color:#111}
-    .wrap{max-width:900px;margin:40px auto;padding:20px}
-    header{display:flex;align-items:center;gap:16px}
-    .logo{width:64px;height:64px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#0fc3ff);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700}
-    h1{margin:0;font-size:1.6rem}
-    p.lead{color:var(--muted);margin:8px 0 20px}
-    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(12,20,40,0.06);margin-bottom:16px}
-    ul{margin:0;padding-left:1.1rem}
-    .features{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
-    footer{font-size:0.9rem;color:var(--muted);margin-top:18px}
-    .btn{display:inline-block;background:var(--accent);color:#fff;padding:10px 14px;border-radius:10px;text-decoration:none}
-    pre{background:#0f1724;color:#e6eef8;padding:12px;border-radius:8px;overflow:auto}
-    .muted{color:var(--muted)}
-    @media (max-width:520px){.wrap{margin:18px;padding:14px}}
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Geo Camera — Terms of Service</title>
+<meta name="description" content="Official Terms of Service for Geo Camera, an Android GPS-enabled camera app for capturing photographs with location watermarks, addresses, weather, and map information.">
+<meta name="robots" content="index, follow">
+<meta name="application-name" content="Geo Camera">
+<meta name="theme-color" content="#0f2b4c">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Geo Camera — Terms of Service">
+<meta property="og:description" content="Terms of Service for Geo Camera (Android), a GPS-enabled camera application. Learn about app features, permissions, third-party services, and your rights.">
+<meta property="og:site_name" content="Geo Camera">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Geo Camera — Terms of Service">
+<meta name="twitter:description" content="Terms of Service for Geo Camera (Android). Version 1.3.5, package com.homedesignia.geocamera.">
+<style>
+:root{
+  --navy:#0f2b4c;
+  --navy-2:#1a3f6d;
+  --ink:#1e2a36;
+  --muted:#5b6b7d;
+  --bg:#f4f6f9;
+  --paper:#ffffff;
+  --line:#e2e8f0;
+  --accent:#0e8a5f;
+  --accent-soft:#e8f6f0;
+  --amber:#b45309;
+  --amber-soft:#fff7e6;
+  --red:#9f1239;
+  --radius:16px;
+  --radius-sm:10px;
+  --shadow:0 10px 30px rgba(15,43,76,.08);
+  --max:1120px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  *{transition:none!important}
+}
+body{
+  margin:0;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif;
+  background:var(--bg);
+  color:var(--ink);
+  font-size:16px;
+  line-height:1.65;
+  overflow-x:hidden;
+}
+a{color:#0b5ed7;text-decoration:underline;text-underline-offset:2px}
+a:hover{color:#0949a3}
+a:focus-visible,button:focus-visible{outline:3px solid #f59e0b;outline-offset:2px;border-radius:4px}
+.skip-link{position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden}
+.skip-link:focus{position:fixed;left:16px;top:16px;width:auto;height:auto;padding:12px 16px;background:var(--navy);color:#fff;border-radius:8px;z-index:99;text-decoration:none}
+.header{
+  background:linear-gradient(180deg,#0f2b4c 0%,#14365f 100%);
+  color:#fff;
+  padding:40px 20px 28px;
+}
+.header-inner{max-width:var(--max);margin:0 auto}
+.brand-row{display:flex;align-items:center;gap:12px;margin-bottom:18px;flex-wrap:wrap}
+.brand-mark{
+  width:44px;height:44px;border-radius:12px;background:#fff;color:var(--navy);
+  display:grid;place-items:center;font-weight:800;font-size:20px;flex:0 0 auto;
+}
+.brand-name{font-weight:700;font-size:18px;letter-spacing:.2px}
+.brand-sub{font-size:13px;opacity:.85;margin-top:2px}
+.header h1{font-size:34px;line-height:1.15;margin:8px 0 10px;letter-spacing:-.4px}
+.header p.lead{margin:0;max-width:720px;color:#dbeafe;font-size:17px}
+.meta-grid{
+  margin-top:22px;display:grid;grid-template-columns:repeat(2,1fr);gap:10px;
+}
+.meta-card{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);border-radius:var(--radius-sm);padding:12px 14px}
+.meta-card dt{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#bfdbfe;margin-bottom:4px}
+.meta-card dd{margin:0;font-weight:600;font-size:14px;word-break:break-all}
+.meta-card dd code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13px;color:#fff}
+.header-actions{margin-top:18px;display:flex;gap:10px;flex-wrap:wrap}
+.btn{
+  display:inline-block;padding:10px 16px;border-radius:999px;font-weight:600;font-size:14px;text-decoration:none;
+}
+.btn-primary{background:#fff;color:var(--navy)}
+.btn-ghost{border:1px solid rgba(255,255,255,.5);color:#fff}
+.wrap{max-width:var(--max);margin:0 auto;padding:24px 20px 8px}
+.draft-note{
+  background:var(--amber-soft);border:1px solid #f5d9a0;border-left:5px solid var(--amber);
+  border-radius:var(--radius-sm);padding:14px 16px;margin:8px 0 20px;font-size:14px;
+}
+.draft-note strong{color:#92400e}
+.layout{display:grid;grid-template-columns:1fr;gap:20px;align-items:start}
+.toc{
+  background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);
+  padding:18px;box-shadow:var(--shadow);
+}
+.toc h2{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--navy);margin:0 0 12px}
+.toc ol{list-style:none;margin:0;padding:0;display:grid;gap:2px}
+.toc li a{
+  display:block;padding:7px 10px;border-radius:8px;color:var(--ink);text-decoration:none;font-size:14px;
+}
+.toc li a:hover{background:#f1f5f9;text-decoration:underline}
+.toc details{margin:0}
+.toc summary{cursor:pointer;font-weight:700;color:var(--navy);padding:8px 10px;border-radius:8px}
+.toc summary:hover{background:#f1f5f9}
+.doc{
+  background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);
+  padding:28px 22px 16px;box-shadow:var(--shadow);
+}
+.doc section{padding:22px 0;border-bottom:1px solid var(--line);scroll-margin-top:16px}
+.doc section:last-child{border-bottom:none;padding-bottom:8px}
+.doc h2{color:var(--navy);font-size:22px;margin:0 0 12px;line-height:1.25}
+.doc h3{color:var(--navy-2);font-size:16px;margin:18px 0 8px}
+.doc p{margin:0 0 12px}
+.doc ul,.doc ol{margin:0 0 14px;padding-left:22px}
+.doc li{margin-bottom:7px}
+.notice{
+  border-radius:var(--radius-sm);padding:13px 15px;margin:14px 0;font-size:14.5px;
+}
+.notice-info{background:var(--accent-soft);border:1px solid #bfe8d4;border-left:5px solid var(--accent)}
+.notice-warn{background:var(--amber-soft);border:1px solid #f5d9a0;border-left:5px solid var(--amber)}
+.notice-important{background:#fff1f2;border:1px solid #fecdd3;border-left:5px solid var(--red)}
+.notice strong{display:block;margin-bottom:4px}
+.placeholder{
+  background:#eef2ff;border:1px dashed #6366f1;border-radius:6px;
+  padding:1px 7px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;
+  font-size:13.5px;color:#4338ca;white-space:normal;
+}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.92em;background:#f1f5f9;padding:1px 5px;border-radius:5px}
+.privacy-box{
+  background:#f8fafc;border:1px solid var(--line);border-radius:var(--radius-sm);
+  padding:14px 16px;margin:16px 0;
+}
+.table-wrap{overflow-x:auto;margin:12px 0 16px}
+table{border-collapse:collapse;width:100%;font-size:14.5px;min-width:520px}
+th,td{text-align:left;padding:10px 12px;border:1px solid var(--line);vertical-align:top}
+th{background:#f1f5f9;color:var(--navy);font-size:13px;letter-spacing:.03em}
+.footer{
+  max-width:var(--max);margin:20px auto 36px;padding:0 20px;
+}
+.footer-inner{
+  background:var(--navy);color:#e2e8f0;border-radius:var(--radius);
+  padding:22px;display:flex;flex-direction:column;gap:10px;
+}
+.footer-inner a{color:#fff}
+.footer-links{display:flex;gap:16px;flex-wrap:wrap;font-size:14px}
+.footer p{margin:0;font-size:13.5px;color:#cbd5e1}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@media (min-width:960px){
+  .header{padding:48px 20px 34px}
+  .header h1{font-size:42px}
+  .meta-grid{grid-template-columns:repeat(4,1fr)}
+  .layout{grid-template-columns:280px 1fr;gap:24px}
+  .toc{position:sticky;top:20px;max-height:calc(100vh - 40px);overflow-y:auto}
+  .toc details{display:block}
+  .toc summary{display:none}
+  .doc{padding:32px 36px 20px}
+  .footer-inner{flex-direction:row;justify-content:space-between;align-items:center}
+}
+@media (max-width:959px){
+  .toc ol{max-height:280px;overflow-y:auto}
+}
+@media (max-width:560px){
+  .header{padding:28px 16px 22px}
+  .header h1{font-size:28px}
+  .header p.lead{font-size:15.5px}
+  .meta-grid{grid-template-columns:1fr}
+  .wrap{padding:16px 12px 4px}
+  .doc{padding:22px 16px 10px}
+  .doc h2{font-size:19px}
+}
+@media print{
+  body{background:#fff}
+  .header{background:#fff;color:#000;border-bottom:2px solid #000}
+  .header p.lead,.brand-sub{color:#333}
+  .meta-card{background:#fff;border-color:#999;color:#000}
+  .toc{box-shadow:none}
+  .doc,.toc{border-color:#999}
+  a{color:#000}
+  .header-actions{display:none}
+}
+</style>
 </head>
 <body>
-  <main class="wrap">
-    <header>
-      <div class="logo">GPS</div>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+<header class="header">
+  <div class="header-inner">
+    <div class="brand-row">
+      <div class="brand-mark" aria-hidden="true">G</div>
       <div>
-
-        
-        <h1>GPS Map Camera <small class="muted">v1.0.0</small></h1>
-        <p class="lead">Capture photos & videos with precise GPS tags — works offline, stores locally and optionally syncs to cloud.</p>
+        <div class="brand-name">Geo Camera</div>
+        <div class="brand-sub">Android &bull; GPS-enabled camera app</div>
       </div>
-    </header>
+    </div>
+    <h1>Terms of Service</h1>
+    <p class="lead">These Terms govern your use of Geo Camera, an Android application that captures photographs with geographical information, location watermarks, and related documentation features.</p>
 
-    <section class="card">
-      <h2>Quick lines</h2>
-      <p><strong>GPS Map Camera</strong> — Auto GPS tagging (±5–15m), offline-first, map view, weather, local storage & optional cloud sync.</p>
-      <p><a class="btn" href="#download">Download / Play Store</a> <span style="margin-left:10px;color:var(--muted)">|</span> <a href="#privacy" style="margin-left:10px">Privacy Policy</a></p>
-    </section>
+    <dl class="meta-grid" aria-label="Document information">
+      <div class="meta-card"><dt>Application</dt><dd>Geo Camera</dd></div>
+      <div class="meta-card"><dt>Package</dt><dd><code>com.homedesignia.geocamera</code></dd></div>
+      <div class="meta-card"><dt>Version</dt><dd>1.3.5</dd></div>
+      <div class="meta-card"><dt>Platform</dt><dd>Android</dd></div>
+      <div class="meta-card"><dt>Effective date</dt><dd><time datetime="2026-11-07">7 November 2026</time></dd></div>
+      <div class="meta-card"><dt>Last updated</dt><dd><time datetime="2026-11-07">7 November 2026</time></dd></div>
+      <div class="meta-card"><dt>Publisher</dt><dd><span class="placeholder">[EDITABLE PLACEHOLDER: Publisher / developer legal name]</span></dd></div>
+      <div class="meta-card"><dt>Related document</dt><dd><a href="privacy-policy.html">Privacy Policy</a> (separate document)</dd></div>
+    </dl>
 
-    <section class="card">
-      <h2>Important features</h2>
-      <div class="features">
-        <div>
-          <h3>Instant GPS tagging</h3>
-          <p class="muted">Automatic coordinates on every photo & video (high accuracy).</p>
-        </div>
-        <div>
-          <h3>Offline support</h3>
-          <p class="muted">Use the app in remote places — address estimation & cached geocoding.</p>
-        </div>
-        <div>
-          <h3>Interactive map</h3>
-          <p class="muted">Map view of all captured locations and location-based gallery sorting.</p>
-        </div>
-        <div>
-          <h3>Weather integration</h3>
-          <p class="muted">Temperature & humidity tagged with each capture (optional).</p>
-        </div>
-        <div>
-          <h3>Local & cloud storage</h3>
-          <p class="muted">Data stored locally by default; optional automatic cloud sync.</p>
-        </div>
-        <div>
-          <h3>Video metadata</h3>
-          <p class="muted">Record video with embedded GPS metadata.</p>
-        </div>
-      </div>
-    </section>
+    <div class="header-actions">
+      <a class="btn btn-primary" href="#s1">Read the Terms</a>
+      <a class="btn btn-ghost" href="#s19">Privacy Policy</a>
+    </div>
+  </div>
+</header>
 
-    <section id="privacy" class="card">
-      <h2>Privacy Policy (summary)</h2>
-      <p class="muted">This app requires Camera and Location permissions to tag media with GPS coordinates. Photos are stored locally; cloud sync is optional. We do not sell personal data. Contact: <a href="mailto:support@homedesignia">support@homedesignia.com</a>.</p>
-      <details>
-        <summary style="cursor:pointer;margin-top:8px">Full privacy policy</summary>
-        <div style="margin-top:12px">
-<pre>
-Privacy Policy — GPS Map Camera
-Effective date: 16 Nov 2025
+<div class="wrap">
+  <div class="draft-note" role="note">
+    <strong>Publication notice — please complete before publishing.</strong>
+    This page is a draft template. All placeholders shown in blue dashed text, including the publisher identity, governing law, jurisdiction, and contact details, must be completed with your confirmed business information. Have these Terms reviewed against your actual data practices and applicable laws before publication and before adding the URL to Google Play Console.
+  </div>
 
-1. Introduction
-GPS Map Camera ("the App") is developed by Cityline Developers. This Privacy Policy explains what information we collect, how we use it, how it is stored, and the rights available to users.
-
-2. Information We Collect
-• Photos & Videos: Media you capture inside the app is stored locally. Cloud sync is optional.
-• GPS Location Data: Used to tag media with coordinates, generate map views, and display addresses.
-• Weather Data: Fetched based on your location when weather tagging is enabled.
-• Device Info & Diagnostics: Crash logs, performance data, and basic device identifiers.
-
-3. How We Use Your Information
-• To tag photos/videos with accurate GPS metadata.
-• To display maps, addresses, weather, and location‑based gallery sorting.
-• To improve app stability through diagnostics.
-• To sync data to your chosen cloud provider (only if enabled).
-
-4. Permissions We Request
-• CAMERA — required to capture photos and videos.
-• ACCESS_FINE_LOCATION — required for precise GPS tagging.
-• ACCESS_COARSE_LOCATION — for approximate location when high accuracy is unavailable.
-• STORAGE (optional depending on Android version) — to save and access media.
-• BACKGROUND_LOCATION (only if used) — to tag location when capturing through background services.
-
-5. Data Storage & Retention
-• Local data stays on your device unless you enable cloud sync.
-• We retain analytics and crash reports for up to 6–12 months.
-• You may delete photos/videos anytime.
-
-6. Data Sharing
-We do not sell personal data. We may share limited data with:
-• Cloud storage providers — only if you enable sync.
-• Analytics & crash-reporting services — for diagnostics.
-All third parties are required to follow strict data protection standards.
-
-7. Security
-We use encryption in transit (HTTPS), secure storage practices, and strict access controls. No system is 100% secure, but we continuously work to protect your data.
-
-8. Your Rights
-• Access, modify, or delete data stored locally.
-• Disable location or camera permissions anytime in system Settings.
-• Request deletion of analytics data via email.
-
-9. Children’s Privacy
-The app is not designed for children under 13. We do not knowingly collect data from children.
-
-10. Changes to This Policy
-We may update this Privacy Policy periodically. Changes will be posted on this page with a new effective date.
-
-11. Contact Us
-For questions or requests: support@yourdomain.com
-</pre>
-        </div>
+  <div class="layout">
+    <nav class="toc" aria-label="Table of contents">
+      <h2>Table of contents</h2>
+      <details open>
+        <summary>Sections 1&ndash;19</summary>
+        <ol>
+          <li><a href="#s1">1. Introduction</a></li>
+          <li><a href="#s2">2. Acceptance of Terms</a></li>
+          <li><a href="#s3">3. Eligibility</a></li>
+          <li><a href="#s4">4. Application Features</a></li>
+          <li><a href="#s5">5. Camera and Location Permissions</a></li>
+          <li><a href="#s6">6. Location and Address Accuracy</a></li>
+          <li><a href="#s7">7. Photographs and User Content</a></li>
+          <li><a href="#s8">8. Local Storage and Data Management</a></li>
+          <li><a href="#s9">9. Third-Party Services</a></li>
+          <li><a href="#s10">10. Advertisements</a></li>
+          <li><a href="#s11">11. Prohibited Use</a></li>
+          <li><a href="#s12">12. Intellectual Property</a></li>
+          <li><a href="#s13">13. Disclaimer of Warranties</a></li>
+          <li><a href="#s14">14. Limitation of Liability</a></li>
+          <li><a href="#s15">15. Suspension and Termination</a></li>
+          <li><a href="#s16">16. Changes to These Terms</a></li>
+          <li><a href="#s17">17. Governing Law and Disputes</a></li>
+          <li><a href="#s18">18. Contact Information</a></li>
+          <li><a href="#s19">19. Privacy Policy</a></li>
+        </ol>
       </details>
-    </section>
+    </nav>
 
-    <section id="download" class="card">
-      <h2>Download & Play Store</h2>
-      <p class="muted">Add your Play Store URL and replace placeholders in this page before publishing.</p>
-      <p><a class="btn" href="https://play.google.com/store" target="_blank">Play Store Listing</a></p>
-    </section>
+    <main class="doc" id="main-content">
+      <h2 class="sr-only">Geo Camera Terms of Service</h2>
 
-    
+      <section id="s1" aria-labelledby="s1-title">
+        <h2 id="s1-title">1. Introduction</h2>
+        <p>Welcome to Geo Camera. Geo Camera is an Android application (package name <code>com.homedesignia.geocamera</code>, version 1.3.5) that enables you to capture photographs together with geographical information, including GPS coordinates, reverse-geocoded addresses, date and time stamps, weather information where available, and map-related displays.</p>
+        <p>These Terms of Service (the &ldquo;Terms&rdquo;) form a legal agreement between you and the publisher of Geo Camera identified in <a href="#s18">Section 18 (Contact Information)</a> (the &ldquo;Publisher&rdquo;). By downloading, installing, accessing, or using Geo Camera, you agree to these Terms.</p>
+        <p>If you do not agree to these Terms, please do not download or use the application.</p>
+        <div class="notice notice-info"><strong>What this application does</strong>Geo Camera is a camera and field-documentation tool. It is not a navigation, emergency, surveying, or professional positioning service. See <a href="#s6">Section 6 (Location and Address Accuracy)</a> for important limitations on accuracy.</div>
+      </section>
 
-  </main>
+      <section id="s2" aria-labelledby="s2-title">
+        <h2 id="s2-title">2. Acceptance of Terms</h2>
+        <p>We may present these Terms in the application, in its store listing, on this webpage, or by reference from our Privacy Policy. This webpage is the canonical published version of the Terms for the current release.</p>
+        <p>Your acceptance is effective when you first download, install, access, or use Geo Camera. We may update these Terms from time to time as described in <a href="#s16">Section 16 (Changes to These Terms)</a>. Continued use after updated Terms take effect constitutes acceptance of the updated Terms.</p>
+        <p>Separate terms and policies may apply to third-party services used by the application (for example, Google services and Open-Meteo). Those third-party terms, not these Terms, govern your use of those external services. See <a href="#s9">Section 9 (Third-Party Services)</a>.</p>
+      </section>
+
+      <section id="s3" aria-labelledby="s3-title">
+        <h2 id="s3-title">3. Eligibility</h2>
+        <p>To use Geo Camera, you must be legally permitted to enter into a binding agreement in your place of residence and must otherwise comply with all laws that apply to your use of the application.</p>
+        <p>If you are below the age of majority in the jurisdiction where you live, you may use Geo Camera only with the consent and supervision of a parent or legal guardian, and your guardian agrees to these Terms on your behalf. Geo Camera is not directed at children, and you should not present the app to a child without appropriate supervision.</p>
+        <p>We do not state a single universal age threshold in these Terms, because age-of-majority and consent rules vary by jurisdiction. You are responsible for ensuring that you meet the eligibility requirements that apply where you live.</p>
+      </section>
+
+      <section id="s4" aria-labelledby="s4-title">
+        <h2 id="s4-title">4. Application Features</h2>
+        <p>Subject to permissions you grant and device capabilities, Geo Camera provides the following features:</p>
+        <ul>
+          <li><strong>GPS-enabled camera:</strong> capture photographs using the device camera.</li>
+          <li><strong>Geographical information:</strong> attach GPS coordinates and, where available, reverse-geocoded addresses to photographs.</li>
+          <li><strong>Location watermark:</strong> embed a permanent information panel in photographs that may include location and address text, GPS coordinates, date and time, and weather data.</li>
+          <li><strong>Date and time watermark:</strong> record capture-time information on the photograph.</li>
+          <li><strong>Weather information:</strong> display weather data where an internet connection and a weather provider are available.</li>
+          <li><strong>Map features:</strong> view map-related information, including map thumbnails and Google Maps integration for viewing locations and opening locations in Google Maps.</li>
+          <li><strong>Photo Details screen:</strong> view metadata and details stored for a photograph.</li>
+          <li><strong>Local gallery and photo management:</strong> browse, organize, and manage photographs saved by the application.</li>
+          <li><strong>Automatic saving:</strong> save captured photographs automatically to local storage and, where supported, to the device photo gallery.</li>
+          <li><strong>Photo sharing:</strong> share photographs through Android sharing options you select.</li>
+        </ul>
+        <p>Features may vary by device, operating system version, permission grants, GPS availability, and internet connectivity. Not every feature is available in every location or on every device. We may add, modify, or remove features over time; Section 15 addresses discontinuation.</p>
+      </section>
+
+      <section id="s5" aria-labelledby="s5-title">
+        <h2 id="s5-title">5. Camera and Location Permissions</h2>
+        <p>Geo Camera may request the following categories of permissions, each for the purpose described:</p>
+        <div class="table-wrap">
+          <table>
+            <caption><span class="sr-only">Permissions requested by Geo Camera</span></caption>
+            <thead><tr><th scope="col">Permission</th><th scope="col">Why it is requested</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Camera</strong></td><td>To capture photographs.</td></tr>
+              <tr><td><strong>Location (fine and coarse)</strong></td><td>To obtain GPS coordinates and address information for capture-time tagging and watermarks.</td></tr>
+              <tr><td><strong>Photo and media access</strong></td><td>To save photographs and manage the local gallery, including reading and writing images (and, on some Android versions, video or other media) as applicable.</td></tr>
+              <tr><td><strong>Internet access and network state</strong></td><td>To retrieve addresses, weather data, and map data; to load advertisements; and to enable Firebase services where applicable.</td></tr>
+              <tr><td><strong>Advertising ID</strong></td><td>To support advertising measurement and controls provided by Google AdMob, subject to your device settings and consent choices.</td></tr>
+              <tr><td><strong>Wake lock / boot completion</strong></td><td>Where used, to support background sync and work-scheduling functions included in the application.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>You choose whether to grant each permission in Android settings. Some core features will not work without the corresponding permission. For example, the camera cannot capture photographs without camera permission, and location information cannot be attached without location permission.</p>
+        <div class="notice notice-info"><strong>Location depends on your device</strong>Available location information depends on your device settings, the permissions you grant, GPS and location-service availability, signal conditions, and external services. Turning off location services or denying location permission may result in photographs without location information or with only approximate location information.</div>
+        <p>You are responsible for managing permissions on your device. Revoking a permission may affect existing and future functionality.</p>
+      </section>
+
+      <section id="s6" aria-labelledby="s6-title">
+        <h2 id="s6-title">6. Location and Address Accuracy</h2>
+        <p>Geo Camera does not guarantee the accuracy of geographical information. Please read this section carefully before relying on or sharing any location information.</p>
+        <ul>
+          <li><strong>GPS coordinates may be inaccurate.</strong> Depending on satellite signal, indoor conditions, terrain, and device hardware, reported coordinates may be approximate, stale, or incorrectly recorded.</li>
+          <li><strong>Reverse-geocoded addresses may contain errors.</strong> Addresses are derived from coordinates using geocoding data sources. They may be incomplete, outdated, or assigned to the wrong building, street, or locality.</li>
+          <li><strong>Weather and map information may be unavailable or delayed.</strong> Weather data, map data, and nearby-place information depend on network connectivity and third-party availability.</li>
+          <li><strong>Environmental conditions and device hardware affect results.</strong> Battery level, sensor quality, operating system settings, and network conditions can affect location fixes and related information.</li>
+          <li><strong>Approximate or unavailable states.</strong> The application may use a cached or last-known position, indicate approximate accuracy, or show that location or address information is unavailable. An on-screen location is not necessarily a fresh, high-accuracy fix.</li>
+        </ul>
+        <div class="notice notice-warn"><strong>Do not rely on Geo Camera for safety-critical decisions</strong>Do not use Geo Camera as a substitute for professional mapping, navigation, emergency, legal, or surveying services. Verify location information independently before acting on it, especially before sharing photographs publicly.</div>
+      </section>
+
+      <section id="s7" aria-labelledby="s7-title">
+        <h2 id="s7-title">7. Photographs and User Content</h2>
+        <p><strong>Your photographs remain yours.</strong> You retain all rights, title, and interest that you have in photographs you create using Geo Camera. We do not claim ownership of your photographs or of other content you create.</p>
+        <p>When you capture a photograph, the application may process the image on your device to embed the location watermark and related metadata. The watermark is burned into the saved photograph, so you may not be able to produce a version of that processed photograph without the watermark.</p>
+        <p>You are solely responsible for:</p>
+        <ul>
+          <li>the photographs you capture, store, share, or distribute;</li>
+          <li>having the necessary rights to capture scenes and people and to share resulting photographs;</li>
+          <li>verifying location, address, date, time, and weather information before relying on or sharing it; and</li>
+          <li>complying with all laws and third-party rights that apply to your photographs, including privacy, publicity, and intellectual property laws.</li>
+        </ul>
+        <div class="notice notice-important"><strong>Privacy warning — location information can be sensitive</strong>Sharing a Geo Camera photograph may reveal where you live, work, or travel, the locations of other people, and other sensitive information. Review the watermark and metadata before sharing, and consider redacting or cropping location information when appropriate.</div>
+        <p>You must not use Geo Camera to harass, defame, or invade the privacy of any person, or to create or distribute unlawful content.</p>
+      </section>
+
+      <section id="s8" aria-labelledby="s8-title">
+        <h2 id="s8-title">8. Local Storage and Data Management</h2>
+        <p>Geo Camera is designed as a local-first application. Photographs and associated metadata (such as coordinates, addresses, timestamps, and weather values) are saved on your device. In the current implementation, photographs are stored in the application&rsquo;s local storage area, metadata and caches are kept in local databases on the device, and captured photographs can also be saved to the device&rsquo;s photo gallery.</p>
+        <p><strong>Local storage is not the same as no external transmission.</strong> While the application does not operate a Publisher server that stores your photographs for you, certain features transmit limited data to third-party services as described in <a href="#s9">Section 9</a>. For example:</p>
+        <ul>
+          <li>coordinates may be sent to geocoding and weather providers to obtain an address or weather information;</li>
+          <li>interactions with maps, ads, and Firebase services involve network requests; and</li>
+          <li>sharing a photograph sends it to the recipient or service you choose through Android sharing.</li>
+        </ul>
+        <div class="notice notice-info"><strong>Review the Privacy Policy for details</strong>These Terms describe storage in general terms. The separate <a href="#s19">Privacy Policy</a> explains information handling in more detail. Read both documents together.</div>
+        <p>You control your local data by viewing, editing, or deleting photographs through the application and by managing device storage. Uninstalling the application or clearing its data may delete local photographs, metadata, and caches stored by the application. We have no ability to restore data you delete from your device.</p>
+        <p>Permissions for photo and media access allow the application to save and manage photographs as described above. You should keep copies of any photographs you consider important.</p>
+      </section>
+
+      <section id="s9" aria-labelledby="s9-title">
+        <h2 id="s9-title">9. Third-Party Services</h2>
+        <p>Geo Camera uses the following third-party services. Each service is provided by its own provider and is governed by that provider&rsquo;s terms and privacy policies:</p>
+        <ul>
+          <li><strong>Google AdMob</strong> (<code>google_mobile_ads</code> and the Google Mobile Ads SDK) — for displaying advertisements.</li>
+          <li><strong>Google Maps</strong> (<code>google_maps_flutter</code> and the Google Maps Android SDK) — for map display and map-related functionality.</li>
+          <li><strong>Google Geocoding and Places services</strong> (via Google Maps Platform APIs) — used in the current implementation to obtain reverse-geocoded addresses and nearby-place information.</li>
+          <li><strong>Open-Meteo</strong> — the weather API used in the current implementation to retrieve weather information.</li>
+          <li><strong>Firebase Analytics</strong> — for measuring application usage and feature performance, subject to applicable consent and privacy settings.</li>
+          <li><strong>Firebase Crashlytics</strong> — for crash reporting and application stability monitoring.</li>
+        </ul>
+        <p>Third-party services may collect, process, and disclose information in accordance with their own privacy policies and your device consent and advertising settings. We do not make representations about any third-party provider&rsquo;s data practices beyond the official service descriptions linked from the Privacy Policy.</p>
+        <p>Availability and content of third-party services are outside our control. A third-party outage, API change, quota limit, or policy change may affect features that depend on that service.</p>
+        <p>We encourage you to review the applicable third-party terms and policies, including Google&rsquo;s privacy documentation and the Open-Meteo terms, before using features that depend on them.</p>
+      </section>
+
+      <section id="s10" aria-labelledby="s10-title">
+        <h2 id="s10-title">10. Advertisements</h2>
+        <p>The free version of Geo Camera may display advertisements provided through Google AdMob. Advertisements help support the free availability of the application.</p>
+        <p>Advertisements may be personalized or non-personalized depending on applicable consent choices, privacy regulations that apply to you, and your device advertising settings. You can manage advertising preferences in your Android settings and, where presented, through consent mechanisms provided in the application or by the advertisement provider.</p>
+        <p>Advertisements are supplied by third parties. We do not endorse any advertiser or product, and we are not responsible for the content of any advertisement. Ads are presented as advertisements and are not part of the application&rsquo;s geo-tagging functionality. Content in advertisements may occasionally be shown close to application controls; always review the screen carefully before tapping, and report or dismiss advertisements that appear deceptive.</p>
+        <p>We do not encourage accidental clicks on advertisements. If you are concerned about advertising, review your device settings and the Privacy Policy for information about advertising controls.</p>
+      </section>
+
+      <section id="s11" aria-labelledby="s11-title">
+        <h2 id="s11-title">11. Prohibited Use</h2>
+        <p>You agree not to use Geo Camera in any way that:</p>
+        <ul>
+          <li>violates any applicable law or regulation;</li>
+          <li>infringes or misappropriates the intellectual property, privacy, or other rights of any person;</li>
+          <li>harasses, threatens, defames, or invades the privacy of any person;</li>
+          <li>collects, stores, or distributes location or photographic information in a manner that is unlawful or without a lawful basis;</li>
+          <li>attempts to disrupt, overload, or gain unauthorized access to the application, its infrastructure, or any third-party service;</li>
+          <li>attempts to interfere with advertising delivery, including by artificially generating ad impressions or clicks;</li>
+          <li>attempts to distribute the application without authorization, except through authorized application stores or as otherwise permitted by law; or</li>
+          <li>attempts to decompile, reverse engineer, copy, modify, or create derivative works of the application, except to the extent that such restriction is prohibited by applicable law.</li>
+        </ul>
+        <p>We may investigate suspected abuse and may suspend or terminate access as described in <a href="#s15">Section 15</a>.</p>
+      </section>
+
+      <section id="s12" aria-labelledby="s12-title">
+        <h2 id="s12-title">12. Intellectual Property</h2>
+        <p>The Geo Camera application, including its name, branding, software, interface design, and related materials, is owned by the Publisher or its licensors and is protected by intellectual property laws.</p>
+        <p>These Terms do not transfer to you any intellectual property rights in the application, except for a limited, revocable, non-exclusive, non-transferable license to download, install, and use the application solely for your personal, non-commercial use in accordance with these Terms and any application-store terms that apply.</p>
+        <p>This section does not claim ownership of:</p>
+        <ul>
+          <li>photographs and other content you create, which remain yours as described in <a href="#s7">Section 7</a>; or</li>
+          <li>third-party services, map data, or application programming interfaces, which remain the property of their respective providers and are used under their respective terms.</li>
+        </ul>
+        <p>You must not remove or alter any copyright, trademark, or other proprietary notices in the application.</p>
+      </section>
+
+      <section id="s13" aria-labelledby="s13-title">
+        <h2 id="s13-title">13. Disclaimer of Warranties</h2>
+        <p><strong>To the maximum extent permitted by applicable law,</strong> Geo Camera is provided &ldquo;as is&rdquo; and &ldquo;as available,&rdquo; without warranties of any kind, whether express or implied, including warranties of merchantability, fitness for a particular purpose, accuracy, and non-infringement.</p>
+        <p>Without limiting the foregoing, we do not warrant that:</p>
+        <ul>
+          <li>the application will operate without interruption, errors, or security vulnerabilities;</li>
+          <li>GPS coordinates will be precise, addresses will be correct, or weather data will be current;</li>
+          <li>any third-party service will be continuously available or will provide accurate data; or</li>
+          <li>photographs, watermarks, or metadata will be complete or suitable for any particular legal, evidentiary, or professional purpose.</li>
+        </ul>
+        <p>Nothing in this section affects any statutory rights or remedies that you may have under applicable consumer protection law.</p>
+      </section>
+
+      <section id="s14" aria-labelledby="s14-title">
+        <h2 id="s14-title">14. Limitation of Liability</h2>
+        <p><strong>To the maximum extent permitted by applicable law,</strong> in no event will the Publisher, its licensors, or their respective officers, employees, or agents be liable for any indirect, incidental, special, consequential, or punitive damages, including lost profits, lost data, loss of photographs, or loss of goodwill, arising from or relating to your use of (or inability to use) Geo Camera.</p>
+        <p><strong>To the maximum extent permitted by applicable law,</strong> our total liability arising from or relating to Geo Camera will not exceed the greater of:</p>
+        <ul>
+          <li>the amount you paid (if any) for the application in the twelve months before the claim arose; or</li>
+          <li>USD 25 <span class="placeholder">[EDITABLE PLACEHOLDER: confirm liability cap currency and amount, or replace with the amount required by governing law]</span>.</li>
+        </ul>
+        <p>Nothing in these Terms excludes or limits liability for fraud, willful misconduct, personal injury or death caused by negligence, or any other liability that cannot be excluded or limited under applicable law.</p>
+      </section>
+
+      <section id="s15" aria-labelledby="s15-title">
+        <h2 id="s15-title">15. Suspension and Termination</h2>
+        <p>We may suspend or terminate your access to Geo Camera, in whole or in part, at any time if:</p>
+        <ul>
+          <li>you violate these Terms or any applicable law;</li>
+          <li>your use harms or threatens to harm the application, its users, or third-party services; or</li>
+          <li>we are required to do so by a court order, regulator, or applicable law.</li>
+        </ul>
+        <p>We may discontinue, modify, or limit any feature or the application itself at any time. If we discontinue the application, we will provide reasonable notice where required by law and, where feasible, through the application store or this webpage.</p>
+        <p>You may stop using Geo Camera and uninstall it at any time. Sections that by their nature should survive termination, including ownership, disclaimers, liability limits, and governing law, will survive.</p>
+      </section>
+
+      <section id="s16" aria-labelledby="s16-title">
+        <h2 id="s16-title">16. Changes to These Terms</h2>
+        <p>We may update these Terms from time to time to reflect changes in the application, legal requirements, or our business. When we make changes, we will update the &ldquo;Last updated&rdquo; date at the top of this webpage. Material changes will be published on this webpage before they take effect, where required by law.</p>
+        <p>If you continue to use Geo Camera after updated Terms take effect, you agree to the updated Terms. If you do not agree to the updated Terms, please stop using the application.</p>
+      </section>
+
+      <section id="s17" aria-labelledby="s17-title">
+        <h2 id="s17-title">17. Governing Law and Disputes</h2>
+        <p>These Terms are governed by the laws of <span class="placeholder">[EDITABLE PLACEHOLDER: governing jurisdiction — insert confirmed country and, if applicable, state/province]</span>.</p>
+        <p>Any dispute arising from or relating to these Terms or Geo Camera will be resolved in the courts of <span class="placeholder">[EDITABLE PLACEHOLDER: dispute resolution venue / jurisdiction — insert confirmed venue]</span>, subject to any mandatory consumer rights that apply where you live.</p>
+        <p>Before filing any formal claim, we ask that you contact us using the information in <a href="#s18">Section 18</a> so that we can attempt to resolve the matter informally.</p>
+        <p>If any provision of these Terms is held unenforceable, the remaining provisions will continue in full effect.</p>
+      </section>
+
+      <section id="s18" aria-labelledby="s18-title">
+        <h2 id="s18-title">18. Contact Information</h2>
+        <p>For questions about these Terms or Geo Camera, please contact us at:</p>
+        <ul>
+          <li><strong>Publisher / developer:</strong> <span class="placeholder">[EDITABLE PLACEHOLDER: Publisher / developer legal name]</span></li>
+          <li><strong>Support email:</strong> <span class="placeholder">[EDITABLE PLACEHOLDER: support email address]</span></li>
+          <li><strong>Business or contact address:</strong> <span class="placeholder">[EDITABLE PLACEHOLDER: business / contact address, if applicable]</span></li>
+          <li><strong>Website:</strong> <span class="placeholder">[EDITABLE PLACEHOLDER: website URL]</span></li>
+        </ul>
+        <p>Please include the application name, package name (<code>com.homedesignia.geocamera</code>), and version (1.3.5) in your message so we can assist you more efficiently.</p>
+      </section>
+
+      <section id="s19" aria-labelledby="s19-title">
+        <h2 id="s19-title">19. Privacy Policy</h2>
+        <p>Our handling of personal information is described in the separate <strong>Geo Camera Privacy Policy</strong>, not in these Terms.</p>
+        <div class="privacy-box">
+          <p style="margin-bottom:8px"><strong>Geo Camera Privacy Policy:</strong> <a href="privacy-policy.html">privacy-policy.html</a> <span class="placeholder">[EDITABLE PLACEHOLDER: replace with final Privacy Policy URL hosted on GitHub Pages]</span></p>
+          <p style="margin-bottom:0">Please read the Privacy Policy carefully. It explains what information is collected, how it is used and transmitted to third-party services, your choices and rights, and how to contact us about privacy.</p>
+        </div>
+        <div class="notice notice-info"><strong>These Terms do not replace the Privacy Policy</strong>If there is any conflict between these Terms and the Privacy Policy regarding personal information, apply the Privacy Policy to that issue unless a different result is required by law.</div>
+      </section>
+
+    </main>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div>
+      <p style="color:#fff;font-size:15px;font-weight:700;margin-bottom:6px">Geo Camera &mdash; Terms of Service</p>
+      <div class="footer-links">
+        <a href="#s1">Terms of Service</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="#s18">Contact</a>
+      </div>
+    </div>
+    <p>&copy; <time datetime="2026">2026</time> <span class="placeholder">[EDITABLE PLACEHOLDER: Publisher / copyright holder name]</span>. All rights reserved. Geo Camera &mdash; Android, version 1.3.5, package com.homedesignia.geocamera.</p>
+  </div>
+</footer>
 </body>
 </html>
